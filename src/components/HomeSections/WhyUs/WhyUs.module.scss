@@ -1,0 +1,39 @@
+@import "../../../styles/style.scss";
+
+.container {
+  background: linear-gradient(178deg, #d8e1ff 0%, #ffffff 80%);
+
+  .content {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-block: 4rem;
+    padding-inline: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    
+    @include media-down-lg {
+      padding-inline: 7%;
+    }
+
+    @include media-down-md {
+      padding-inline: 1rem;
+    }
+
+
+
+    .main_title {
+      font-size: 3.5rem;
+      color: $_purple;
+      font-family: $co_headline_bold;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include media-down-sm {
+        font-size: 1.84rem;
+      }
+    }
+  }
+}

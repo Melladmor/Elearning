@@ -1,0 +1,159 @@
+@import "../../../styles/style.scss";
+
+body[dir="rtl"] {
+  .container {
+    background-position: -240px 80%;
+
+    @include media-down-md {
+      background-position: center 34vh;
+    }
+
+    .left {
+      .actions {
+        @include media-down-md {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  height: 100vh;
+  padding: 0 7%;
+  display: grid;
+  grid-template-columns: 50% 52%;
+  background-image: url("../../../public/img/home-pattern.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 450px -10%;
+  margin: 0 auto;
+
+  @include media-down-md {
+    grid-template-columns: 1fr;
+    background-image: url("../../../public/img/home-bg.svg");
+    background-position: center 32vh;
+    background-repeat: no-repeat;
+    background-size: 50vh;
+    min-height: 100vh;
+  }
+
+  @include media-down-sm {
+    background-position: center 31vh;
+  }
+
+  @include media-xxs {
+    background-position: center 33vh;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+
+    @include media-down-md {
+      padding: 0 0 0 0;
+      gap: 15px;
+      align-items: center;
+
+    }
+
+    .titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      color: $_purple;
+      padding-top: 30%;
+
+      @include media-down-md {
+        padding-top: 17% !important;
+      }
+
+      @include media-down-sm {
+        padding-top: 20% !important;
+      }
+
+      @include media-down-xs {
+        padding-top: 35% !important;
+        
+      }
+
+      @include media-xxs {
+        padding-top: 30% !important;
+      }
+
+      h1 {
+        font-size: 3.25vw;
+        font-family: $co_headline_bold;
+        line-height: 3.5rem;
+        letter-spacing: 0.01vw;
+        margin: 0;
+
+        @include media-down-md {
+          font-size: 5.25vw;
+          line-height: 4.5rem;
+        }
+
+        @include media-down-sm {
+          font-size: 7.25vw;
+        }
+
+        @include media-down-xs {
+          line-height: 2.5rem;
+        }
+
+        @include media-xxs {
+          line-height: 2.5rem;
+        }
+      }
+
+      h3 {
+        font-size: 1.75vw;
+        font-family: $co_headline_regular;
+        margin: 0;
+
+        @include media-down-md {
+          font-size: 3vw;
+        }
+
+        @include media-down-sm {
+          font-size: 3.75vw;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3.5vw;
+
+      @include media-down-md {
+        gap: 15px;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+
+    img {
+      margin-top: -20% !important;
+      width: 45vw;
+      max-height: 100vh;
+    }
+
+    @include media-down-md {
+      display: none;
+      margin-top: 20%;
+    }
+  }
+}

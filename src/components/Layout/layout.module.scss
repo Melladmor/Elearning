@@ -1,0 +1,162 @@
+@import "../../styles/style";
+
+body[dir="rtl"] {
+  .container {
+    .left {
+      flex-direction: row-reverse;
+    }
+
+    .mobile_nav_container {
+      .mobile_nav {
+        .right {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 7% 93%;
+  font-family: $co_headline_light;
+
+  @include media(auto, 1100px) {
+    grid-template-columns: 9% 91%;
+  }
+
+  @include media-down-md {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .mobile_nav_container {
+    background: linear-gradient(110deg, #220859 0%, #121126 100%);
+    padding-block: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    .mobile_nav {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 55%;
+        height: 100%;
+
+        @include media(auto, 1075px) {
+          width: 80%;
+        }
+
+        @include media(auto, 975px) {
+          width: 82%;
+        }
+
+        @include media(auto, 775px) {
+          width: 80%;
+        }
+
+        @include media(auto, 675px) {
+          width: 75%;
+        }
+
+        @include media(auto, 575px) {
+          width: 70%;
+        }
+
+        @include media(auto, 475px) {
+          width: 65%;
+        }
+
+        @include media(auto, 375px) {
+          width: 55%;
+        }
+
+        .logo_container {
+          transform: scale(0.6);
+        }
+      }
+
+      .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;
+
+        @include media(auto, 1075px) {
+          width: 20%;
+        }
+
+        @include media(auto, 975px) {
+          width: 18%;
+        }
+
+        @include media(auto, 775px) {
+          width: 25%;
+        }
+
+        @include media(auto, 575px) {
+          width: 30%;
+        }
+
+        @include media(auto, 475px) {
+          width: 40%;
+        }
+
+        @include media(auto, 375px) {
+          width: 45%;
+        }
+
+        &.opened {
+          @include media(auto, 1075px) {
+            width: 30%;
+          }
+
+          @include media(auto, 975px) {
+            width: 27%;
+          }
+
+          @include media(auto, 875px) {
+            width: 30%;
+          }
+
+          @include media(auto, 775px) {
+            width: 35%;
+          }
+
+          @include media(auto, 675px) {
+            width: 40%;
+          }
+
+          @include media(auto, 575px) {
+            width: 45%;
+          }
+
+          @include media(auto, 475px) {
+            width: 55%;
+          }
+
+          @include media(auto, 375px) {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+}

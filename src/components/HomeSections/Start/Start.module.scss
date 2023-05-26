@@ -1,0 +1,71 @@
+@import "../../../styles/style.scss";
+
+.container {
+  position: relative;
+  padding-block: 4rem;
+  background-image: url("../../../public/img/home-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -30rem -30rem;
+  background-color: #fff;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 95vw;
+
+    @include media-down-sm {
+      gap: 3rem;
+    }
+
+    .main_title {
+      color: $_purple;
+      text-align: center;
+
+      h3 {
+        font-family: $co_headline_bold;
+
+        @include media-down-sm {
+          font-size: 0.8rem;
+        }
+
+        span {
+          border-bottom: 3px solid $_dark_red;
+
+          @include media-down-sm {
+            border-bottom: 1.5px solid $_dark_red;
+            font-size: 1rem;
+
+          }
+        }
+      }
+
+      h1 {
+        font-family: $co_headline_bold;
+
+        @include media-down-sm {
+          font-size: 1.3rem;
+        }
+
+        span {
+          border-bottom: 3px solid $_green;
+
+          @include media-down-sm {
+            border-bottom: 1.5px solid $_green;
+          }
+        }
+      }
+
+      h4 {
+        font-family: $co_headline_light;
+        font-size: 1.3rem;
+
+        @include media-down-sm {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

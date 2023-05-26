@@ -1,0 +1,74 @@
+@import "../../../styles/style.scss";
+
+.testi_swiper {
+  max-width: 1920px;
+  height: 100%;
+  width: 100%;
+  @include media-down-md {
+    max-width: 600px;
+  }
+
+  @include media-down-sm {
+    max-width: 500px;
+  }
+
+  @include media-down-xs {
+    max-width: 400px;
+  }
+
+  @include media-xxs {
+    max-width: 300px;
+  }
+}
+
+.testi-slide {
+  background: $_blue;
+  width: 100%;
+  @include media-down-sm {
+    border-radius: 45px;
+  }
+}
+
+.swiper-button-prev {
+  transform: scale(0.35);
+  color: $_white;
+  margin-block-start: -2rem;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  font-weight: bolder;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 1000 !important;
+
+  &:hover{
+    left: -58px;
+    background-color: red !important;
+    color: $_blue !important;
+    z-index: 1000 !important;
+
+  }
+
+}
+
+.swiper-button-next {
+  transform: scale(0.35);
+  color: $_white;
+  margin-block-start: -2rem;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50% !important;
+  transition: 0.5s;
+  z-index: 1000 !important;
+
+  // &:hover{
+  //   right: -58px;
+  //   background-color: red !important;
+  //   color: $_blue !important;
+  //   z-index: 1000 !important;
+    
+  // }
+
+}

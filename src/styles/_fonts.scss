@@ -1,0 +1,16 @@
+@import "./variables";
+
+@font-face {
+  font-family: $co_headline_light;
+  src: url("../public/fonts/CoHeadline-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: $co_headline_regular;
+  src: url("../public/fonts/CoHeadline.woff") format("woff");
+}
+
+@font-face {
+  font-family: $co_headline_bold;
+  src: url("../public/fonts/CoHeadline-Bold.woff") format("woff");
+}

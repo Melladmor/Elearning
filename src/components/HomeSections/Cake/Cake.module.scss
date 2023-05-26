@@ -1,0 +1,507 @@
+@import "../../../styles/style";
+
+body[dir="rtl"] {
+  .container {
+    @include media-down-md {
+      background-image: url("../../../public/img/cake_mobile_ar.png");
+      background-size: 140% 80%;
+      background-position: 0% !important;
+    }
+
+    @include media-down-xs {
+      background-size: 130% 50%;
+      background-position: 100%;
+    }
+
+    .elements {
+      @include media(auto, 1000px) {
+        height: 335px;
+        margin-block-start: 8rem;
+      }
+
+      .col1 {
+        order: -1;
+        align-items: flex-end;
+
+        .sec_1 {
+          margin-block-start: 11px;
+          margin-inline-end: 120px;
+
+          @include media(auto, 1425px) {
+            margin-block-start: 9px;
+          }
+
+          @include media(auto, 1000px) {
+            margin-block-start: 40px;
+          }
+        }
+
+        .sec_2 {
+          margin-block-start: -32px;
+          margin-inline-end: 100px;
+
+          @include media(auto, 1300px) {
+            margin-block-start: -25px;
+          }
+
+          @include media(auto, 1000px) {
+            margin-block-start: -20px;
+          }
+        }
+
+        .sec_3 {
+          margin-block-end: 10px;
+          margin-inline-end: 50px;
+
+          @include media(auto, 1425px) {
+            margin-block-end: 11px;
+          }
+
+          @include media(auto, 1000px) {
+            margin-block-end: -20px;
+          }
+        }
+      }
+
+      .col3 {
+        order: -2;
+        align-items: flex-start;
+
+        .sec_1 {
+          margin-block-start: 40px;
+
+          @include media(auto, 1425px) {
+            margin-block-start: 45px;
+          }
+        }
+
+        .sec_2 {
+          margin-block-start: 40px;
+
+          @include media(auto, 1000px) {
+            margin-block-start: 30px;
+          }
+        }
+
+        .sec_3 {
+          margin-block-end: 26px;
+
+          @include media(auto, 1425px) {
+            margin-block-end: 28px;
+          }
+
+          @include media(auto, 1000px) {
+            margin-block-end: -5px;
+          }
+        }
+      }
+    }
+
+    .mobile_elements {
+      @include media-down-md {
+        left: 10%;
+        right: auto;
+        bottom: 17%;
+      }
+
+      @include media(auto, 800px) {
+        left: 8%;
+        right: auto;
+      }
+
+      @include media(auto, 700px) {
+        left: 6%;
+        right: auto;
+      }
+
+      @include media(auto, 600px) {
+        left: 17%;
+        right: auto;
+      }
+
+      @include media(auto, 500px) {
+        right: auto;
+        left: 7%;
+      }
+
+      @include media(auto, 400px) {
+        right: auto;
+        left: 15%;
+        bottom: 30%;
+        gap: 5px;
+      }
+
+      @include media(auto, 350px) {
+        left: 5%;
+        right: auto;
+      }
+
+      .mobile_section {
+        .mobile_title {
+          @include media(auto, 400px) {
+            font-size: 0.75rem !important;
+          }
+        }
+
+        .mobile_body {
+          @include media(auto, 400px) {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-image: url("../../../public/img/cake.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-size: 1100px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @include media(auto, 1100px) {
+    background-size: 900px;
+    gap: 1rem;
+  }
+
+  @include media-down-md {
+    background-image: url("../../../public/img/cake_mobile.png");
+    background-size: 139% 77%;
+    background-position: 100%;
+    min-height: 900px;
+  }
+
+  @include media(auto, 800px) {
+    background-size: 139% 67%;
+  }
+
+  @include media(auto, 700px) {
+    min-height: 700px;
+    background-size: 139% 77%;
+  }
+
+  @include media(auto, 600px) {
+    min-height: 600px;
+  }
+
+  @include media(auto, 500px) {
+    background-size: 139% 67%;
+  }
+
+  @include media(auto, 400px) {
+    min-height: 500px;
+    background-size: 139% 57%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-family: $co_headline_bold;
+      color: $_purple;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+
+      @include media-down-md {
+        color: $_dark_purple;
+        font-size: 4rem;
+        padding-inline: 1rem;
+      }
+
+      @include media-down-sm {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .mobile_elements {
+    display: none;
+
+    @include media-down-md {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: absolute;
+      right: 13%;
+      left: auto;
+      bottom: 18.5%;
+      gap: 10px;
+    }
+    @include media(auto, 1000px) {
+      right: 20%;
+      bottom: 29% !important;
+
+    }
+
+
+    @include media(auto, 800px) {
+      right: 15%;
+      bottom: 31% !important;
+      gap: 0px;
+    }
+
+    @include media(auto, 700px) {
+      right: 19% !important;
+      bottom: 29% !important;
+      gap: 5px;
+    }
+
+    @include media(auto, 600px) {
+      right: 1%;
+      gap: 12px;
+      bottom: 20% !important;
+    }
+
+    @include media(auto, 500px) {
+      bottom: 28% !important;
+      gap: 10px;
+      right: 1%;
+    }
+
+    @include media(auto, 400px) {
+      bottom: 30% !important;
+      gap: 2px;
+      right: 13% !important;
+
+    }
+
+    @include media(auto, 350px) {
+      right: 0% !important;
+    }
+
+    .mobile_section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      .mobile_title {
+        font-family: $co_headline_bold;
+        color: $_purple;
+        text-align: start;
+        margin: 0;
+        font-size: 2.2rem;
+
+        @include media(auto, 1000px) {
+          font-size: 1.4rem;
+        }
+        @include media(auto, 700px) {
+          font-size: 1.1rem;
+        }
+
+        @include media(auto, 600px) {
+          font-size: 1rem;
+        }
+
+        @include media(auto, 500px) {
+          font-size: 0.8rem;
+        }
+
+        @include media(auto, 400px) {
+          font-size: 0.7rem;
+        }
+      }
+
+      .mobile_body {
+        font-family: $co_headline_regular;
+        color: $_purple;
+        text-align: start;
+        margin: 0;
+        font-size: 1.9rem;
+
+        @include media(auto, 1000px) {
+          font-size: 1.2rem;
+        }
+        @include media(auto, 700px) {
+          font-size: 0.9rem;
+        }
+
+        @include media(auto, 600px) {
+          font-size: 0.8rem;
+        }
+
+        @include media(auto, 500px) {
+          font-size: 0.6rem;
+        }
+
+        @include media(auto, 400px) {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .elements {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+    height: 400px;
+    margin-block-start: 3rem;
+    padding-inline: 22rem;
+
+    @include media(auto, 1825px) {
+      padding-inline: 20rem;
+    }
+
+    @include media(auto, 1725px) {
+      padding-inline: 15rem;
+    }
+
+    @include media(auto, 1625px) {
+      padding-inline: 10rem;
+    }
+
+    @include media(auto, 1425px) {
+      padding-inline: 7%;
+    }
+
+    @include media(auto, 1000px) {
+      padding-inline: 3%;
+    }
+
+    @include media-down-md {
+      display: none;
+    }
+
+    .title {
+      font-family: $co_headline_bold;
+      font-size: 0.5rem;
+      color: $_purple;
+
+    }
+
+    .body {
+      font-family: $co_headline_regular;
+      font-size: 1rem;
+      color: $_purple;
+    }
+
+    .col1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .sec_1 {
+        margin-block-start: 15px;
+        margin-inline-start: 75px;
+
+        @include media(auto, 1350px) {
+          margin-block-start: 40px;
+          margin-inline-start: 65px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-block-start: 110px;
+        }
+      }
+
+      .sec_2 {
+        margin-block-start: -30px;
+        margin-inline-start: 55px;
+
+        @include media(auto, 1300px) {
+          margin-inline-start: 42px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-block-start: 16x;
+        }
+      }
+
+      .sec_3 {
+        margin-block-end: 8px;
+        margin-inline-start: -10px;
+
+        @include media(auto, 1450px) {
+          margin-block-end: 8px;
+          margin-inline-start: -20px;
+        }
+
+        @include media(auto, 1300px) {
+          margin-inline-start: -25px;
+          margin-block-end: -13px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-inline-start: -16px;
+          margin-block-end: -26px;
+        }
+      }
+    }
+
+    .col3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .sec_1 {
+        margin-block-start: 46px;
+        margin-inline-end: 60px;
+
+        @include media(auto, 1300px) {
+          margin-block-start: 72px;
+          margin-inline-end: 56px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-block-start: 142px;
+          margin-inline-end: 50px;
+        }
+      }
+
+      .sec_2 {
+        margin-block-start: 32px;
+        margin-inline-end: 40px;
+
+        @include media(auto, 1300px) {
+          margin-inline-end: 30px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-block-start: 38px;
+        }
+      }
+
+      .sec_3 {
+        margin-block-end: 22px;
+        margin-inline-end: 40px;
+
+        @include media(auto, 1300px) {
+          margin-block-end: 6px;
+          margin-inline-end: 30px;
+        }
+
+        @include media(auto, 1100px) {
+          margin-block-end: -5px;
+        }
+      }
+    }
+  }
+
+  .strip {
+    @include media-down-md {
+      display: none;
+    }
+
+    @include media(auto, 1000px) {
+      bottom: 90px;
+    }
+
+    position: absolute;
+    bottom: 50px;
+    width: 100vw !important;
+  }
+}

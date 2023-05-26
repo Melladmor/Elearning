@@ -1,0 +1,16 @@
+body[dir="rtl"] {
+  .container {
+    flex-direction: row-reverse;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,175 @@
+@import "../../../styles/style";
+
+.fullscreen {
+  background: linear-gradient(110deg, #220859 0%, #121126 100%);
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  top: 0;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .full_navbar_container_grid {
+      column-gap: 0.5rem;
+      row-gap: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @include media-down-md {
+        padding: 1rem 10rem;
+      }
+
+      @include media-down-sm {
+        padding: 1rem 3rem;
+      }
+
+      @include media-down-xs {
+        padding: 1rem 1.5rem;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+
+        .section {
+          height: fit-content;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          gap: 5px;
+          color: $_white;
+
+          .section_head {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-family: $co_headline_bold;
+            line-height: 30px;
+
+            .why {
+              @extend .courses;
+
+              &:before {
+                background: #2bd988 !important;
+              }
+            }
+
+            .outcomes {
+              @extend .courses;
+
+              &:before {
+                background: #f2a20c !important;
+              }
+            }
+
+            .summer {
+              @extend .courses;
+
+              &:before {
+                background: #f2e30c !important;
+              }
+            }
+
+            .sessions {
+              @extend .courses;
+
+              &:before {
+                background: #f22e2e !important;
+              }
+            }
+
+            .pricing {
+              @extend .courses;
+
+              &:before {
+                background: #52a8f2 !important;
+              }
+            }
+
+            .courses {
+              position: relative;
+
+              &:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #f26716;
+                position: absolute;
+                left: -10px;
+                top: 2.5px;
+              }
+              
+
+            }
+          }
+
+          .section_body {
+            font-family: $co_headline_light;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 3px;
+            font-size: 1.2rem;
+
+            .see_all {
+              margin-top: 0.5rem;
+              color: rgba($_white, 70%);
+              font-size: 0.75rem;
+            }
+
+            .event {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+
+              .timing {
+                color: rgba($_white, 70%);
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // .sidebar_footer {
+    //   background: $_blue;
+    //   margin-top: 5rem;
+    //   padding: 3rem 1.5rem;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   gap: 2rem;
+
+    //   .sidebar_footer_up {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: flex-start;
+    //     gap: 33px;
+    //   }
+
+    //   .sidebar_footer_middle {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //   }
+
+    //   .sidebar_footer_bottom {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: space-evenly;
+    //     color: $_white;
+    //     font-size: 1rem;
+    //     font-family: $co_headline_light;
+    //   }
+    // }
+  }
+}

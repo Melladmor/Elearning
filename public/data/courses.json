@@ -1,0 +1,334 @@
+[
+  {
+    "lng": "ar",
+    "courses": [
+      {
+        "name": "بايثون للأطفال",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "مبتديء",
+        "theme": "blue",
+        "icon": "/src/views/kids/public/img/courses/course1.png"
+      },
+      {
+        "name": "تطوير تطبيقات الجوال باستخدام رياكت نايتف",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "مبتديء",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "برمجة سكراتش للأطفال",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "مبتديء",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "تطوير تطبيقات الجوال باستخدام رياكت نايتف",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "مبتديء",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course2.png"
+      },
+      {
+        "name": "بايثون للأطفال",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "مبتديء",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "تطوير تطبيقات الجوال باستخدام رياكت نايتف",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "مبتديء",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "برمجة سكراتش للأطفال",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "مبتديء",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "تطوير تطبيقات الجوال باستخدام رياكت نايتف",
+        "technologies": ["رياكت", "تصميم واجهة المستخدم"],
+        "description": "يعلم هذه الدورة الطلاب كيفية بناء تطبيقات الجوال باستخدام رياكت نايتف",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "مبتديء",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course2.png"
+      }
+    ]
+  },
+  {
+    "lng": "en",
+    "courses": [
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course2.png"
+      },
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      }
+    ]
+  },
+  {
+    "lng": "de",
+    "courses": [
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course2.png"
+      },
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      }
+    ]
+  },
+  {
+    "lng": "tr",
+    "courses": [
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "APP Development using React Native",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "7",
+          "to": "9"
+        },
+        "level": "Beginner",
+        "theme": "blue",
+        "icon": "../../../public/img/courses/course2.png"
+      },
+      {
+        "name": "Python for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "10",
+          "to": "13"
+        },
+        "level": "Beginner",
+        "theme": "orange",
+        "icon": "../../../public/img/courses/course1.png"
+      },
+      {
+        "name": "Scratch Programming for Kids",
+        "technologies": ["React", "User Interface Design"],
+        "description": "This course teaches students how to build mobile apps using React Native … This course teaches students how to",
+        "age": {
+          "from": "14",
+          "to": "17"
+        },
+        "level": "Beginner",
+        "theme": "yellow",
+        "icon": "../../../public/img/courses/course1.png"
+      }
+    ]
+  }
+]

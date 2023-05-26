@@ -1,0 +1,16 @@
+.slider_motion{
+    width: 320px;
+    max-width: 300px;
+    height: 70vh;
+    overflow: hidden;
+    display: none;
+    margin-right: 20px;
+    @media (max-width:450px) {
+        display: block;
+    }
+    .carousel_motion{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

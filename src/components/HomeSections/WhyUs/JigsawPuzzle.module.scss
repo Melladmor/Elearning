@@ -1,0 +1,498 @@
+@import "../../../styles/style.scss";
+
+body[dir="rtl"] {
+  .container {
+    @include media-down-md {
+      background-image: url("../../../public/img/jigsaw_mobile_ar.png");
+    }
+
+    .puzzle {
+      .puzzle_header {
+        @include media(auto, 1600px) {
+          font-size: 1.45rem;
+        }
+        @include media-xxs{
+          font-size: 1rem ;
+
+        }
+
+        &:before {
+          right: 0px;
+          left: auto;
+
+          @include media-down-lg {
+            right: -2px;
+            left: auto;
+          }
+        }
+      }
+
+      .puzzle_body {
+        @include media(auto, 1600px) {
+          font-size: 0.85rem;
+        }
+      }
+
+      &:nth-of-type(2) {
+        .puzzle_header {
+          padding-inline-end: 1rem !important;
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+
+          @include media(auto, 1500px) {
+            padding-inline-start: 0 !important;
+          }
+
+          @include media-down-md {
+            font-size: smaller;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .puzzle_header {
+          padding-inline-end: 1rem !important;
+
+          @include media-down-md {
+            padding-inline-end: 2rem !important;
+          }
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+          padding-inline-start: 4.5rem !important;
+
+          @include media(auto, 1500px) {
+            padding-inline-start: 3.5rem !important;
+          }
+
+          @include media(auto, 1500px) {
+            padding-inline-start: 3.5rem !important;
+          }
+
+          @include media(auto, 1000px) {
+            padding-inline-start: 3rem !important;
+          }
+
+          @include media-down-md {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        .puzzle_header {
+          margin-inline-start: 4rem;
+
+          @include media-down-md {
+            margin: 0;
+          }
+
+          &:before {
+            top: 5px !important;
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+        .puzzle_header {
+          padding: 0rem !important;
+          padding-inline-end: 1.5rem !important;
+          margin: 0rem !important;
+
+          &:before {
+            @include media(auto, 1500px) {
+              top: 10px !important;
+            }
+          }
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+        }
+      }
+
+      &:nth-of-type(6) {
+        .puzzle_header {
+          padding-inline-end: 1.5rem !important;
+
+          @include media-down-md {
+            padding-inline-end: 2rem !important;
+          }
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+          padding-inline-start: 3.75rem !important;
+
+          @include media(auto, 1500px) {
+            padding-inline-start: 2.75rem !important;
+          }
+
+          @include media(auto, 1000px) {
+            padding-inline-start: 2rem !important;
+          }
+
+          @include media-down-md {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+        }
+      }
+
+      &:nth-of-type(7) {
+        .puzzle_header {
+          padding-inline-end: 0 !important;
+          margin-inline-start: 0rem !important;
+
+          @include media-down-md {
+            padding-inline-end: 2rem !important;
+          }
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+          padding-inline-start: 0 !important;
+
+          @include media-down-sm {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+        }
+      }
+
+      &:nth-of-type(8) {
+        .puzzle_header {
+          padding-inline-end: 6rem !important;
+          padding-block-start: 0rem !important;
+
+          @include media(auto, 1500px) {
+            padding-inline-end: 5rem !important;
+          }
+
+          @include media(auto, 1100px) {
+            padding-inline-end: 2rem !important;
+          }
+
+          @include media-down-md {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+
+          &:before {
+            @include media-down-sm {
+              top: 5px !important;
+            }
+          }
+        }
+
+        .puzzle_body {
+          padding-inline-end: 0rem !important;
+          padding-inline-start: 4rem !important;
+
+          @include media(auto, 1500px) {
+            padding-inline-start: 2.6rem !important;
+          }
+
+          @include media(auto, 1000px) {
+            padding-inline-start: 2rem !important;
+          }
+
+          @include media-down-md {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  background: $_white;
+  border-radius: 30px;
+  background-image: url("../../../public/img/jigsaw.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  z-index: 0;
+
+  @include media-lg{
+    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(2, 50%);
+  
+  }
+
+
+  @include media-down-md {
+    max-width: 800px;
+    height: 600px;
+    grid-template-rows: repeat(4, 25%);
+    background-image: url("../../../public/img/jigsaw_mobile.png");
+
+  }
+
+
+  @include media-down-sm {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+    max-width: 700px;
+    height: 600px;
+    background-image: url("../../../public/img/jigsaw_mobile.png");
+  }
+
+  @include media-xxs {
+    max-width: 300px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .puzzle {
+    color: $_purple;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 300px;
+    // border: 1px solid black;
+
+    @include media(auto, 1500px) {
+      height: 250px;
+      gap: 10px;
+    }
+
+    @include media(auto, 1100px) {
+      height: 200px;
+    }
+
+    @include media-down-md {
+      gap: 5px;
+      padding: 1rem;
+    }
+
+    &:nth-of-type(1) {
+      .puzzle_header {
+        @include media-down-sm {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        padding-inline-end: 2rem;
+
+        &:before {
+          background: #52a8f2;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .puzzle_header {
+        padding-inline-end: 5rem;
+
+        &:before {
+          background: #f2e30c;
+        }
+      }
+
+      .puzzle_body {
+        padding-inline-end: 4rem;
+
+        @include media-down-sm {
+          padding-inline-end: 0rem;
+          padding-inline-start: 0rem;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .puzzle_header {
+        padding-inline-end: 5rem;
+
+        @include media-down-sm {
+          padding-inline-end: 0rem;
+        }
+
+        &:before {
+          background: #f22e2e;
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      .puzzle_header {
+        margin-inline-start: 5rem;
+        padding-inline-end: 6rem;
+
+        @include media(auto, 1100px) {
+          margin-inline-start: 2.5rem;
+        }
+
+        @include media-down-md {
+          margin-inline-start: 0rem;
+        }
+
+        @include media-down-sm {
+          padding-inline-end: 3rem;
+          margin: 0%;
+        }
+
+        &:before {
+          background: #c51e0b;
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .puzzle_header {
+        margin-block-start: 0.75rem;
+        padding-inline-end: 10rem;
+        padding-block-start: 0.5rem;
+
+        @include media-down-sm {
+          padding-inline-end: 3rem;
+          padding-block-start: 0;
+          margin: 0%;
+        }
+
+        &:before {
+          background: #2bd988;
+          @include media-lg {
+            top: 20px !important;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(6) {
+      .puzzle_header {
+        padding-inline-end: 8rem;
+
+        @include media-down-sm {
+          margin: 0rem !important;
+        }
+
+        &:before {
+          background: #f2a20c;
+        }
+      }
+    }
+
+    &:nth-of-type(7) {
+      .puzzle_header {
+        padding-inline-end: 1rem;
+        margin-inline-start: 4rem;
+
+        @include media(auto, 1500px) {
+          padding-inline-end: 0rem;
+          margin-inline-start: 3rem;
+        }
+
+        @include media-down-md {
+          margin-inline-start: 0rem;
+          padding-inline-end: 2rem;
+        }
+
+        @include media-down-sm {
+          padding-inline-end: 3rem;
+          margin-inline-start: 0rem;
+        }
+
+        &:before {
+          background: #d8e1ff;
+        }
+      }
+    }
+
+    &:nth-of-type(8) {
+      .puzzle_header {
+        @include media-down-sm {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        &:before {
+          background: #f26716;
+        }
+      }
+    }
+
+    .puzzle_header {
+      font-family: $co_headline_bold;
+      position: relative;
+      text-indent: 1rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+
+      @include media(auto, 1100px) {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        text-indent: 0.7rem;
+      }
+      @include media-down-sm{
+        font-size: 1.3rem;
+
+      }
+
+      &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #f26716;
+        position: absolute;
+        left: 0px;
+        top: 14px;
+
+        @include media-down-lg{
+          top: 12px;
+        } 
+
+
+        @include media-down-lg {
+          width: 8px;
+          height: 8px;
+          left: -2px;
+        }
+        
+      @include media-down-sm {
+        top: 11px;
+
+      }
+      }
+
+      @include media-down-sm {
+        font-size: 0.8rem;
+
+      }
+    }
+
+    .puzzle_body {
+      font-family: $co_headline_regular;
+      font-size: 1.2rem;
+      z-index: 2;
+      position: relative;
+      padding-inline-end: 1.5rem;
+
+      @include media(auto, 1500px) {
+        font-size: 1rem;
+      }
+
+      @include media(auto, 1100px) {
+        font-size: 0.9rem;
+      }
+
+      @include media-down-sm {
+        font-size: 0.7rem;
+        padding: 0rem;
+        margin: 0rem;
+      }
+    }
+  }
+}

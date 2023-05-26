@@ -1,0 +1,82 @@
+
+  
+[
+    {
+      "lng":"ar",
+      "testomonial":[
+        {
+          "name": "Name Sir name",
+          "category": "Teachers",
+          "profession": "Teacher",
+          "image":  "../../src/public/img/person.png",
+          "relate": "Course/Student related",
+          "corse_name":"Course Name",
+          "have_btn":false,
+          "path":"",
+          "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+        },
+        {
+        "name": "Name Sir name",
+        "category": "Teachers",
+        "profession": "Teacher",
+        "image":  "../../src/public/img/person.png",
+        "relate": "Course/Student related",
+        "corse_name":"Course Name",
+          "have_btn":false,
+          "path":"",
+          "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+        },
+        {
+            "name": "Name Sir name",
+            "category": "Parents",
+          "profession": "Parent",
+          "image":  "../../src/public/img/person.png",
+        "relate": "Course/Student related",
+        "corse_name":"Course Name",
+        "have_btn":true,
+        "path":"",
+        "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+
+        },
+        {
+            "name": "Name Sir name",
+            "category": "Parents",
+          "profession": "Parent",
+          "image":  "../../src/public/img/person.png",
+        "relate": "Course/Student related",
+        "corse_name":"Course Name",
+        "have_btn":true,
+        "path":"",
+        "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+
+        },
+        {
+            "name": "Name Sir name",
+          "category": "Students",
+          "profession": "Student",
+          "image":  "../../src/public/img/person.png",
+        "relate": "Course/Student related",
+        "corse_name":"Course Name",
+
+          "have_btn":true,
+          "path":"",
+          "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+        
+        },
+        {
+            "name": "Name Sir name",
+          "category": "Students",
+          "profession": "Student",
+          "image":  "../../src/public/img/person.png",
+        "relate": "Course/Student related",
+        "corse_name":"Course Name",
+
+          "have_btn":true,
+          "path":"",
+          "testomonial": "Teachers Testomonial Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world.Tekkie Uni is an amazing opportunity to get young people into different forms if technology and software this will give them a headstart in our quickly changing digital world."
+        
+        }
+      ]
+    }
+  ]
+  

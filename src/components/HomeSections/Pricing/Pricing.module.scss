@@ -1,0 +1,323 @@
+@import "../../../styles/style.scss";
+
+body[dir="rtl"]{
+  .icon_btn{
+    transform: rotate(180deg);
+  }
+}
+.container {
+  max-width: 1920px;
+  padding-block: 4rem 8rem;
+  padding-inline: 10%;
+  margin: 0 auto;
+  background-image: url("../../../public/img/home-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 550px -130px;
+  z-index: 2;
+
+  @include media-down-lg {
+    padding-inline: 7%;
+  }
+
+  @include media-down-md {
+    padding-inline: 2rem;
+  }
+
+  @include media-down-sm {
+    padding-block: 0rem 5rem;
+  }
+
+  .content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    .main_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $_dark_purple;
+
+      h2 {
+        font-family: $co_headline_bold;
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        @include media-down-sm{
+          font-size: 1.2rem;
+        }
+      }
+
+      h4 {
+        font-family: $co_headline_light;
+        font-size: 1.3rem;
+        text-align: center;
+        @include media-down-sm{
+          font-size: 1rem;
+        }
+        span {
+          border-bottom: 3px solid $_green;
+        }
+      }
+    }
+
+    .card_container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: fit-content;
+
+      @include media(auto, 1500px) {
+        gap: 1rem;
+      }
+
+      @include media-down-md {
+        flex-direction: column;
+        gap: 5rem;
+      }
+
+      .price_card_orange {
+        background: $_orange !important;
+
+        .title {
+          svg {
+            fill: $_orange !important;
+
+            path {
+              stroke: $_white !important;
+            }
+          }
+        }
+        .btn1{
+          &::after{
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            background: $_orange !important;
+          }
+          &:hover:after{
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+        }
+      }
+
+      .price_card_green {
+        background: $_green !important;
+
+        .title {
+          svg {
+            fill: $_green !important;
+
+            path {
+              stroke: $_white !important;
+            }
+          }
+        }
+        .btn1{
+          &::after{
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            background: $_green !important;
+          }
+          &:hover:after{
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+        }
+
+      }
+
+      .price_card_dark_yellow {
+        background: $_dark_yellow !important;
+
+        .title {
+          svg {
+            fill: $_dark_yellow !important;
+
+            path {
+              stroke: $_white !important;
+            }
+          }
+        }
+        .btn1{
+          &::after{
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            background: $_dark_yellow !important;
+          }
+          &:hover:after{
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+        }
+
+      }
+
+      .price_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 15px;
+        box-shadow: 0px 5px 18px #00000029;
+        padding-inline: 0.5rem;
+        overflow-y: visible;
+        height: 300px;
+        width: 350px;
+        // max-width: 380px;
+
+        @include media(auto, 1450px) {
+          max-width: 350px;
+        }
+
+        @include media(auto, 1200px) {
+          max-width: 280px;
+        }
+
+        @include media-down-md {
+          height: 215px;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: center;
+          gap: 0.5rem;
+          width: 100%;
+          padding: 1rem 0.25rem;
+
+          span {
+            color: $_white;
+            font-family: $co_headline_bold;
+            font-size: 1.4rem;
+          }
+
+          svg {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        .body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          background: $_white;
+          border-radius: 15px;
+          padding: 2rem 1rem;
+          min-height: 275px;
+          box-shadow: 0px 3px 6px #00000029;
+          margin-top: -10px;
+
+          @include media-down-md {
+            min-height: 200px;
+            justify-content: center;
+
+          }
+
+          p {
+            text-align: center;
+            color: $_dark_purple;
+            font-family: $co_headline_regular;
+            font-size: 1rem;
+
+            @include media(auto, 1100px) {
+              font-size: 0.9rem;
+            }
+
+            @include media-down-sm {
+              font-size: 1rem;
+            }
+          }
+
+          .price_btn {
+            position: relative;
+            color: $_dark_purple;
+            background-color: transparent;
+            border-radius: 1.25rem;
+            margin-top: 10px;
+            padding-bottom: 7px;
+            border: 1px solid $_dark_purple;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center !important;
+            justify-content: center;
+            gap: 5px;
+            overflow: hidden;
+            z-index: 1000;
+            width: 60%;
+            padding: 10px;
+            padding-bottom: 15px;
+            @include media-down-sm{
+            margin-top: 0px;
+
+            }
+            &::after{
+              content: "";
+              position: absolute;
+              transition: all 0.3s;
+              background: $_dark_purple;
+              z-index: -1;
+            }
+            &::before{
+              content: "";
+              position: absolute;
+              transition: all 0.3s;
+              background: $_dark_purple;
+              // z-index: -1;
+            }
+            &:hover{
+              color: $_white;
+              width: 70%;
+            }
+            .icon_btn{
+              visibility: hidden !important;
+              margin-top: 7px;
+            }
+            &:hover .icon_btn{
+              visibility: visible !important;
+            }
+            .btn1{
+              &::after{
+                height: 0;
+                left: 50%;
+                top: 50%;
+                width: 0;
+              }
+              &:hover:after{
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+                // z-index: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

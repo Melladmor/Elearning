@@ -1,0 +1,42 @@
+@import "../../../styles/style.scss";
+
+.swiper {
+    width: 100%;
+    // height: 80vh;
+    display: none;
+
+    // @include media_md{
+    //     display: none !important;
+
+    // }
+
+    @media (max-width:2000px){
+        // display: none !important;
+
+    }
+    // @include media-down-sm{
+    //     display: none;
+    //     width: 600px;
+    // }
+
+    @include media-down-xs {
+        display: block !important;
+        width: 370px;
+    }
+    // @include media-down-xxs {
+    //     width: 300px;
+    // }
+    // @include media-xs{
+    //         width: 400px;
+    // }
+
+}
+.swiper-slide {
+font-size: 18px;
+display: flex;
+justify-content: center;
+@include media-down-md {
+    justify-content: start;
+    width:400px;
+}
+}

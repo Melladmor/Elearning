@@ -1,0 +1,40 @@
+@import "primereact/resources/themes/saga-orange/theme.css"; //theme
+@import "primereact/resources/primereact.min.css"; //core css
+@import "primeicons/primeicons.css"; //icons
+@import "swiper/css";
+// Custom CSS
+@import "./styles/_normalize.css";
+@import "./styles/style";
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100% !important;
+  
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+.p-speeddial-action {
+  width: 33.25px;
+  height: 33.25px;
+  margin-inline-start: 0.775rem;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.p-speeddial-direction-up .p-speeddial-list {
+  flex-direction: column-reverse;
+  gap: 3px;
+  margin-block-end: 2px;
+  margin-inline-start: -12px;
+}
+
+.p-sidebar .p-sidebar-content {
+  padding: 0 !important;
+}

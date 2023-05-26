@@ -1,0 +1,178 @@
+
+
+
+
+
+
+
+// Extra extra small devices (portrait phones, less than 375.98px)
+@mixin media-xxs {
+  @media (max-width: 375.98px) {
+    @content;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@mixin media-xs {
+  @media (min-width: 376px) and (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin media-down-xs {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin media-up-xs {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin media-sm {
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin media-down-sm {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin media-up-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin media-md {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin media-down-md {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin media-up-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin media-lg {
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin media-down-lg {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin media-up-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and 1400px)
+@mixin media-xl {
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    @content;
+  }
+}
+
+@mixin media-down-xl {
+  @media (max-width: 1399.98px) {
+    @content;
+  }
+}
+
+@mixin media-up-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Extra extra large devices (large desktops, 1400px and up)
+@mixin media-xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin media($minWidth, $maxWidth) {
+  @if ($minWidth== "auto" and $maxWidth != "auto") {
+    @media (max-width: $maxWidth) {
+      @content;
+    }
+  } @else if ($minWidth != "auto" and $maxWidth== "auto") {
+    @media (min-width: $minWidth) {
+      @content;
+    }
+  } @else if ($minWidth != "auto" and $maxWidth != "auto") {
+    @media (min-width: $minWidth) and (max-width: $maxWidth) {
+      @content;
+    }
+  }
+}
+
+@mixin img-rounded($width, $height, $radius: 50%) {
+  border-radius: $radius;
+  height: $height;
+  width: $width;
+  object-fit: cover;
+}
+
+@mixin padding($inline: 0, $block: 0) {
+  padding-inline: $inline;
+  padding-block: $block;
+}
+
+@mixin layoutFontSize {
+  @include media-xxs {
+    font-size: 12px;
+  }
+
+  @include media-xs {
+    font-size: 12px;
+  }
+
+  @include media-sm {
+    font-size: 12px;
+  }
+
+  @include media-md {
+    font-size: 12px;
+  }
+
+  @include media-lg {
+    font-size: 12px;
+  }
+
+  @include media-xl {
+    font-size: 12px;
+  }
+
+  @include media-xxl {
+    font-size: 14px;
+  }
+
+  @include media(1600px, auto) {
+    font-size: 16px;
+  }
+}
